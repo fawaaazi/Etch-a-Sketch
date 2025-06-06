@@ -18,10 +18,16 @@ function gridGenerator(){
         
     }
 }
-rowGenerator()
-gridGenerator()
 
-
+function gridColoror(){
+    const grids = document.getElementsByClassName("grid-element");
+        for(let i = 0; i < grids.length; i++){
+            const grid = grids[i];
+            grid.addEventListener('mouseover', function (){
+                grid.style.backgroundColor = rainbowColorGenerator()
+            });
+        }
+}
 
 function rowStyler(newDiv){
     newDiv.style.width = "100%";
@@ -41,15 +47,6 @@ function rainbowColorGenerator(){
     let rgb = ["#FF0000", "#FFA500", "#FFFF00", "#008000", "#0000FF", "#4B0082", "#EE82EE"];
     return rgb[Math.floor(Math.random() * 7)]
 }
-
-function gridColoror(){
-    const grids = document.getElementsByClassName("grid-element");
-        for(let i = 0; i < grids.length; i++){
-            const grid = grids[i];
-            grid.addEventListener('mouseover', function (){
-                grid.style.backgroundColor = rainbowColorGenerator()
-            });
-        }
-}
-
+rowGenerator()
+gridGenerator()
 gridColoror()
