@@ -39,7 +39,7 @@ function rowStyler(newDiv){
 
 function girdStyler(newDiv){
      newDiv.style.cssText = "width: 28.125px; height: 28.125px;"
-     newDiv.className = "grid-element";
+     newDiv.className = "grid-element"
 }
 
 
