@@ -31,20 +31,21 @@ function gridColoror(){
 
 function rowStyler(newDiv){
     newDiv.style.width = "100%";
-    newDiv.style.height = "31.25px"
-    newDiv.style.backgroundColor = "black";
-    newDiv.style.cssText = "display: flex; justify-content: flex-start; width: 100%; height: 31.25px; background-color: black;";
+    newDiv.style.height = "28.125px"
+    newDiv.style.backgroundColor = "#212529";
+    newDiv.style.cssText = "display: flex; justify-content: flex-start; width: 100%; height: 28.125px; background-color: #D9D7B6;";
     newDiv.className = "grid-row";
 }
 
 function girdStyler(newDiv){
-     newDiv.style.cssText = "width: 31.25px; height: 31.25px;"
+     newDiv.style.cssText = "width: 28.125px; height: 28.125px;"
      newDiv.className = "grid-element";
 }
 
 
 function rainbowColorGenerator(){
     let rgb = ["#FF0000", "#FFA500", "#FFFF00", "#008000", "#0000FF", "#4B0082", "#EE82EE"];
+    return "#878672"
     return rgb[Math.floor(Math.random() * 7)]
 }
 rowGenerator()
