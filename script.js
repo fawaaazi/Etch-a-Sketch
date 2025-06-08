@@ -45,8 +45,10 @@ function girdStyler(newDiv){
 
 function rainbowColorGenerator(){
     let rgb = ["#FF0000", "#FFA500", "#FFFF00", "#008000", "#0000FF", "#4B0082", "#EE82EE"];
-    return "#878672"
-    return rgb[Math.floor(Math.random() * 7)]
+    if(document.getElementById("rgb").checked == true)
+         return rgb[Math.floor(Math.random() * 7)]
+    if(document.getElementById("custom").checked == true)        
+        return "#878672"
 }
 rowGenerator()
 gridGenerator()
